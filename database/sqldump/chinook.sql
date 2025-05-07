@@ -764,7 +764,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table chinook.employees: ~8 rows (approximately)
-INSERT INTO `employees` (`id`, `last_name`, `first_name`, `title`, `reports_to`, ` birth_date`, `hire_date`, `address`, `city`, `state`, `country`, `postal_code`, `phone`, `fax`, `email`) VALUES
+INSERT INTO `employees` (`id`, `last_name`, `first_name`, `title`, `reports_to`, `birth_date`, `hire_date`, `address`, `city`, `state`, `country`, `postal_code`, `phone`, `fax`, `email`) VALUES
 	(1, 'Adams', 'Andrew', 'General Manager', NULL, '1962-02-18 00:00:00', '2002-08-14 00:00:00', '11120 Jasper Ave NW', 'Edmonton', 'AB', 'Canada', 'T5K 2N1', '+1 (780) 428-9482', '+1 (780) 428-3457', 'andrew@chinookcorp.com'),
 	(2, 'Edwards', 'Nancy', 'Sales Manager', 1, '1958-12-08 00:00:00', '2002-05-01 00:00:00', '825 8 Ave SW', 'Calgary', 'AB', 'Canada', 'T2P 2T3', '+1 (403) 262-3443', '+1 (403) 262-3322', 'nancy@chinookcorp.com'),
 	(3, 'Peacock', 'Jane', 'Sales Support Agent', 2, '1973-08-29 00:00:00', '2002-04-01 00:00:00', '1111 6 Ave SW', 'Calgary', 'AB', 'Canada', 'T2P 5M5', '+1 (403) 262-3443', '+1 (403) 262-6712', 'jane@chinookcorp.com'),
