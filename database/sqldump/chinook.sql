@@ -15795,6 +15795,35 @@ INSERT INTO `tracks` (`id`, `name`, `album_id`, `media_type_id`, `genre_id`, `co
 	(3502, 'Quintet for Horn, Violin, 2 Violas, and Cello in E Flat Major, K. 407/386c: III. Allegro', 346, 2, 24, 'Wolfgang Amadeus Mozart', 221331, 3665114, 0.99),
 	(3503, 'Koyaanisqatsi', 347, 2, 10, 'Philip Glass', 206005, 3305164, 0.99);
 
+
+-- --------------------------------------------------------
+-- Add AUTO_INCREMENT to ID columns
+-- --------------------------------------------------------
+
+-- Set AUTO_INCREMENT for all tables with ID columns
+ALTER TABLE `albums` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `artists` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `customers` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `employees` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `genres` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `invoices` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `invoice_lines` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `media_types` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `playlists` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tracks` MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+-- Set AUTO_INCREMENT starting values to continue from existing data
+ALTER TABLE `albums` AUTO_INCREMENT = 348;
+ALTER TABLE `artists` AUTO_INCREMENT = 276;
+ALTER TABLE `customers` AUTO_INCREMENT = 60;
+ALTER TABLE `employees` AUTO_INCREMENT = 9;
+ALTER TABLE `genres` AUTO_INCREMENT = 26;
+ALTER TABLE `invoices` AUTO_INCREMENT = 413;
+ALTER TABLE `invoice_lines` AUTO_INCREMENT = 2241;
+ALTER TABLE `media_types` AUTO_INCREMENT = 6;
+ALTER TABLE `playlists` AUTO_INCREMENT = 19;
+ALTER TABLE `tracks` AUTO_INCREMENT = 3504;
+    
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
